@@ -11,5 +11,11 @@ function calculate_(event)
         
         let table_node = document.createElement("table");
         table_node.setAttribute("id", "table");
-        document.body.appendChild(table_node);
+        //document.body.appendChild(table_node);
+        table_node.innerHTML+="<tr>
+        <th>Installment </th>
+        <th> Pamount </th> 
+        <th>Profit </th>
+    </tr> ";
+
     }
