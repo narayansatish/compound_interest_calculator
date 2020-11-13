@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form>
+        <label for="p">Enter principal amount </label>
+
+        <input type="number" id="p" name="p"  min="0"  required> 
+       <br>
+        <label for="rate"  required>Enter rate Per Annum</label>
+
+        <input type="number" id="rate" name="rate" min="0"  required > 
+        <br>
+        <label for="time">Enter time in year </label>
+
+     <input type="number" id="time" name="time" min="0"  required> 
+
+<label for="interval">Choose interval</label>
+
+<select name="interval" id="interval"  required>
+  <option value="yearly">yearly</option>
+  <option value="half-yearly">half yearly</option>
+  <option value="quaterly">quaterly</option>
+
+</select><br>
+
+<input type="reset">
+<button type="button" id="calculate">Calculate </button>
+</form>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
+<tr><th>installment </th><th> pamount </th> <th>profit </th></tr> 
