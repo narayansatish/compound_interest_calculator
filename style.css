@@ -1,0 +1,19 @@
+#table
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+#form
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+body{
+    background-color:mediumaquamarine;
+    }
+#para{
+    text-align: center;
+}

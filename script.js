@@ -23,7 +23,7 @@ function calculate_(event)
         for(i=1;i<=t;i++)
             {
                 profit =(pa*r)/100;
-                pa=pa+Math.round(profit);
+                pa=pa+(profit);
                 arr[0]=i;
                 arr[1]=pa;
                 arr[2]=profit;
