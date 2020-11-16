@@ -9,14 +9,7 @@ function calculate_(event)
         
         let r=Number(document.getElementById("rate").value);
         let t=Number(document.getElementById("time").value);
-        if(p==null || r==null ||t==null)
-            {let  para= document.createElement("P");
-            para.setAttribute("id", "error");
-            document.body.appendChild(para);
-            var final="Incomplete Data";
-            para.innerHTML=final;
-            return 0;
-            }
+   
         let table_node=document.getElementById("table");
         if(table_node!=null)
              table_node.remove();
@@ -38,6 +31,7 @@ function calculate_(event)
                 profit=profit.toFixed(2);
                 pa=(pa+Number(profit)).toFixed(2);
                 pa=Number(pa);
+                profit=(pa -p).toFixed(2);
                 arr[0]=i;
                 arr[1]=pa;
                 arr[2]=profit;
@@ -49,12 +43,12 @@ function calculate_(event)
 
                     }
             }
-            let total_profit=pa-p;
+            let total_profit=(pa -p).toFixed(2);;
             console.log(total_profit);
         let  para= document.createElement("P");
         para.setAttribute("id", "para");
         document.body.appendChild(para);
-        var final="The total amount after "+t+" year is "+pa+" and interest amount is " +profit;
+        var final="The total amount after "+t+" year is "+pa+" and interest amount is " +total_profit;
         para.innerHTML=final;
     }
 function reset_(event)
@@ -72,7 +66,5 @@ function reset_(event)
         table_node=document.getElementById("para");
         if(table_node!=null)
             table_node.remove();
-        table_node=document.getElementById("error");
-            if(table_node!=null)
-                table_node.remove();
+    
     }
